@@ -14,8 +14,17 @@ export const Header = (props) => {
                 <a
                   href='#features'
                   className='btn btn-custom btn-lg page-scroll'
+                  style={{width:'40%', margin:'10px'}}
                 >
-                  Learn More
+                  Get the OTO app
+                </a>
+                
+                <a
+                  href='#features'
+                  className='btn btn-custom btn-lg page-scroll'
+                  style={{width:'40%', margin:'10px'}}
+                >
+                  Get the OTO Driver app
                 </a>{' '}
               </div>
             </div>
