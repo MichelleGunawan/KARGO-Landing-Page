@@ -33,7 +33,7 @@
         {
             "icon": "img/portfolio/delivery15-square.jpg",
             "name": "CONVENIENT",
-            "text": "Let help you get tasks done."
+            "text": "Do more with your time. Let us help you get tasks done."
         }
 
 
@@ -83,23 +83,17 @@
         "youtube": "youtube.com"
     },
     "Features": [{
-            "icon": "fa fa-bicycle",
+            "icon": "bicycle",
             "title": "OTO XS",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            
-            "icon": "fa fa-motorcycle",
-            "title": "OTO S",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        },
-        {
-            "icon": "fa fa-car",
+            "icon": "car-side",
             "title": "OTO",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            "icon": "fa fa-truck",
+            "icon": "truck-pickup",
             "title": "OTO X",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         }

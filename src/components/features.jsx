@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export const Features = (props) => {
   return (
     <div id='features' className='text-center'>
@@ -8,9 +10,11 @@ export const Features = (props) => {
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
+                <div key={`${d.title}-${i}`} className='col-xs-6 col-md-4'>
                   {' '}
-                  <i className={d.icon}></i>
+                  <FontAwesomeIcon icon={d.icon} size="4x" class="fi"/>
+                  
+                  {/* <i className={d.icon}></i> */}
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
                 </div>
@@ -21,3 +25,17 @@ export const Features = (props) => {
     </div>
   )
 }
+
+
+// data.json:
+//   {
+//       "icon": "truck",
+//       "title": "OTO XL",
+//       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+//   }
+//   {
+            
+//     "icon": "motorcycle",
+//     "title": "OTO S",
+//     "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+//   }
