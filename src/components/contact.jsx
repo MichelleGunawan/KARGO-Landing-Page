@@ -151,7 +151,7 @@ export const Contact = (props) => {
         <div className='container text-center'>
           <p>
             &copy; 2021 {' '}
-            <img src={"img/circlelogo.png"} style={{width: '50px', height:'50px'}}/>
+            <img src={"img/circlelogo.png"}/>
             {/* <a href='http://www.templatewire.com' rel='nofollow'>
               TemplateWire
             </a> */}

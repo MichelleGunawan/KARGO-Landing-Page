@@ -12,19 +12,19 @@ export const Header = (props) => {
                 </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
                 <a
-                  href='#features'
+                  href='#signup'
                   className='btn btn-custom btn-lg page-scroll'
-                  style={{width:'40%', margin:'10px'}}
+                  style={{width:'45%', height: '20%', margin:'10px', fontSize: '15px'}}
                 >
-                  Get the OTO app
+                  Call a KÄR
                 </a>
                 
                 <a
-                  href='#features'
+                  href='#signup'
                   className='btn btn-custom btn-lg page-scroll'
-                  style={{width:'40%', margin:'10px'}}
+                  style={{width:'45%', height: '20%', margin:'10px', fontSize: '15px'}}
                 >
-                  Get the OTO Driver app
+                  Become a KÄR Driver
                 </a>{' '}
               </div>
             </div>

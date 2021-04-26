@@ -573,11 +573,11 @@ color: #777;
 /* Footer Section*/
 #footer {
 	background: #f6f6f6;
-	padding: 30px 0;
+	padding: 10px 0;
 }
 #footer p {
 	color: #888;
-	font-size: 14px;
+	font-size: 17px;
 }
 #footer a {
 	color: #8a9c7e;
@@ -585,9 +585,25 @@ color: #777;
 #footer a:hover {
 	border-bottom: 2px solid #8a9c7e;
 }
+#footer img {
+	height: 60px;
+	width: 60px;
+}
 
 @media (max-width: 768px) {
 #about img {
 	margin: 50px 0;
 }
+}
+
+
+/**signup**/
+#signup{
+	padding: 100px 0 60px 0;
+	background: linear-gradient(to right, #fff 0%, #fff 100%);
+	color: rgba(255,255,255,.75);
+}
+
+#signup .section-title {
+	margin-bottom: 70px;
 }

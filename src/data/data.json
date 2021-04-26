@@ -84,17 +84,17 @@
     },
     "Features": [{
             "icon": "bicycle",
-            "title": "OTO XS",
+            "title": "KÄR XS",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
             "icon": "car-side",
-            "title": "OTO",
+            "title": "KÄR",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
             "icon": "truck-pickup",
-            "title": "OTO X",
+            "title": "KÄR X",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         }
     ]
