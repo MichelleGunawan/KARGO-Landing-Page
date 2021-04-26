@@ -2,26 +2,35 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
 const initialState = {
+  action: '',
   name: '',
-  email: '',
-  message: '',
+  number: '',
+  pickup: '',
+  dropoff: '',
 }
 export const Signup = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{action, name, number, pickup, dropoff }, setState] = useState(initialState)
   const [show, setShow] = useState(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
+  const handleRequestAction = (e) => {
+    setShow(true);
+  }
+  const handleDriveAction = (e) => {
+    setShow(false);
+  }
+
   const clearState = () => setState({ ...initialState })
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message)
+    console.log(action, name, number, pickup, dropoff)
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'service_w1ujmbm', 'template_vbijeg7', e.target, 'user_mwismRY0aiIUFkNfwguj6'
       )
       .then(
         (result) => {
@@ -49,8 +58,8 @@ export const Signup = (props) => {
                 }}>
                 <h2>Signup</h2>
                 <div style={{color: '#555', fontSize:'25px'}}>
-                  <input type="radio" value="request" name="gender" onClick={() => setShow(true)}/> Request
-                  <input type="radio" value="drive" name="gender" style={{marginLeft: '10%'}} onClick={() => setShow(false)}/> Drive
+                  <input type="radio" value="request" name="action" onClick={handleChange} onChange={handleRequestAction}/> Request
+                  <input type="radio" value="drive" name="action" style={{marginLeft: '10%'}} onClick={handleChange} onChange={handleDriveAction}/> Drive
                 </div>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -72,11 +81,11 @@ export const Signup = (props) => {
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
-                        type='email'
-                        id='email'
-                        name='email'
+                        type='number'
+                        id='number'
+                        name='number'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='Phone Number'
                         required
                         onChange={handleChange}
                       />
