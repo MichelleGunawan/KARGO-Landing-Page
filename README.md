@@ -1,5 +1,4 @@
-# React JS Landing Page Template
-
+<!--- # React JS Landing Page Template
 
 ### <a href="https://react-landing-page-template.herokuapp.com">LIVE DEMO</a> 
 
@@ -17,9 +16,4 @@ After cloning the files, you will have to run ```yarn``` followed by ```yarn sta
 Change the data in the ```data.json``` file as well as add any images to ```public/img/```
 You can also change styles by modifying the ```public/css``` files.
 
-
-## Credits
-##### Free CSS 
-<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
-
-##### Issaaf kattan
+--->
